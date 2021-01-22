@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/fondodisni"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="casual"
+        android:text="ICONICAS FRASES DE DISNEY"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:background="#7CFFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/txtPelicula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#7CFFFFFF"
+        android:fontFamily="serif"
+        android:hint="Pelicula Disney de la Frase"
+        android:textColor="#000000"
+        android:textColorHint="@android:color/holo_red_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#7CFFFFFF"
+        android:fontFamily="serif"
+        android:hint="Tipo de Frase"
+        android:textColor="#000000"
+        android:textColorHint="@android:color/holo_red_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtFrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#7CFFFFFF"
+        android:fontFamily="serif"
+        android:hint="Frase memorable "
+        android:maxEms="50"
+        android:textColorHint="@android:color/holo_red_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#F05873D1"
+    android:fontFamily="casual"
+    android:text="Guardar"
+    android:textSize="20dp"
+    android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#F0EEE985"
+        android:fontFamily="casual"
+        android:text="Mostrar Frases"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/Frases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:background="#B6FFFFFF"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="#4299DD"/>
+
+</LinearLayout>
